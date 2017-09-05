@@ -1,15 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
-import codecs
+import io
 from setuptools import setup
-
-
-def read(fname):
-    file_path = os.path.join(os.path.dirname(__file__), fname)
-    return codecs.open(file_path, encoding='utf-8').read()
-
 
 setup(
     name='pytest-libfaketime',
@@ -21,11 +14,11 @@ setup(
     license='MIT',
     url='https://github.com/azmeuk/pytest-libfaketime',
     description='A python-libfaketime plugin for pytest.',
-    long_description=read('README.md'),
+    long_description=io.open('README.md').read(),
     py_modules=['pytest_libfaketime'],
     install_requires=[
         'libfaketime',
-        'pytest>=3.1.1',
+        'pytest>=3.0.0',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',

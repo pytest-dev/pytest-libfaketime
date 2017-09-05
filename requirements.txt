@@ -1,0 +1,4 @@
+libfaketime
+pytest
+pytest-xdist
+tox
