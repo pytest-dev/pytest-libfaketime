@@ -3,3 +3,6 @@
 
 # Installation
 ```pip install pytest-libfaketime```
+
+# Tests
+```tox```
