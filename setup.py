@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='pytest-libfaketime',
-    version='0.1.0',
+    version='0.1.1',
     author='Éloi Rivard',
     author_email='eloi@yaal.fr',
     maintainer='Éloi Rivard',
