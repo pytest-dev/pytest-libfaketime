@@ -12,7 +12,7 @@ setup(
     maintainer='Éloi Rivard',
     maintainer_email='eloi@yaal.fr',
     license='MIT',
-    url='https://github.com/azmeuk/pytest-libfaketime',
+    url='https://gitlab.com/azmeuk/pytest-libfaketime',
     description='A python-libfaketime plugin for pytest.',
     long_description=io.open('README.md').read(),
     py_modules=['pytest_libfaketime'],
