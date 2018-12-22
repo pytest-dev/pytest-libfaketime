@@ -14,6 +14,7 @@ setup(
     url='https://gitlab.com/yaal/pytest-libfaketime',
     description='A python-libfaketime plugin for pytest.',
     long_description=open('README.md').read(),
+    long_description_content_type="text/markdown",
     py_modules=['pytest_libfaketime'],
     install_requires=[
         'libfaketime',
