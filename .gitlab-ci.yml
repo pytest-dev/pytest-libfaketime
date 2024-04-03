@@ -1,3 +1,4 @@
+---
 image: python
 
 stages:
@@ -10,27 +11,32 @@ before_script:
 - python get-pip.py
 - pip install libfaketime tox pytest
 
-python2:
-  image: python:2.7
-  stage: test
-  script: tox -e py27
-
-python34:
-  image: python:3.4
-  stage: test
-  script: tox -e py34
-
-python35:
-  image: python:3.5
-  stage: test
-  script: tox -e py35
-
-python36:
-  image: python:3.6
-  stage: test
-  script: tox -e py36
-
 python37:
-  image: python:3.7-rc
+  image: python:3.7
   stage: test
   script: tox -e py37
+
+python38:
+  image: python:3.8
+  stage: test
+  script: tox -e py38
+
+python39:
+  image: python:3.9
+  stage: test
+  script: tox -e py39
+
+python310:
+  image: python:3.10
+  stage: test
+  script: tox -e py310
+
+python311:
+  image: python:3.11
+  stage: test
+  script: tox -e py311
+
+python312:
+  image: python:3.12
+  stage: test
+  script: tox -e py312
