@@ -1,3 +1,7 @@
+# 0.1.3 - 2024-04-12
+
+- Updated the pypi package metadata. The repository is now hosted at github.com
+
 # 0.1.2 - 2018-12-22
 
 - Updated the pypi package metadata. The repository is now hosted at gitlab.com
