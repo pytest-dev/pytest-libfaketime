@@ -1,0 +1,65 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pytest-libfaketime"
+version = "0.0.12"
+description = "A python-libfaketime plugin for pytest"
+authors = ["Yaal Coop <contact@yaal.coop>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pytest_libfaketime"}]
+keywords = ["libfaketime", "unit tests", "mock"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Beta",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Web Environment",
+    "Programming Language :: Python",
+    "Operating System :: OS Independent",
+    "Framework :: Pytest",
+]
+
+repository = "https://github.com/pytest-dev/pytest-libfaketime"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = ">=3.0.0"
+libfaketime = "^2.0.0"
+
+[tool.poetry.plugins.pytest11]
+libfaketime = "pytest_libfaketime"
+
+[tool.ruff]
+ignore = ["E501", "E722"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+skipsdist = true
+envlist =
+    style
+    py38
+    py39
+    py310
+    py311
+    doc
+
+[testenv]
+allowlist_externals = poetry
+commands =
+    poetry install
+    poetry run pytest {posargs}
+
+[testenv:style]
+commands =
+    pip install pre-commit
+    pre-commit run --all-files
+"""
