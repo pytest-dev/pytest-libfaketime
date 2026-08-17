@@ -70,15 +70,15 @@ wheels = [
 
 [[package]]
 name = "libfaketime"
-version = "2.1.0"
+version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "python-dateutil" },
     { name = "pytz" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c9/ec/a02a79d0254957f340a11c350de2a8ae43cfe2ececc11fc7a951f6f9d263/libfaketime-2.1.0.tar.gz", hash = "sha256:5fecd1770565154f892235a39dfc2388b092864ecca24d05456e4f5a947127a3", size = 75103, upload-time = "2024-05-17T14:23:42.294Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/75/244d7993405e330a2f7befde5985f678779727df9dfc8acd43aa22617114/libfaketime-3.0.0.tar.gz", hash = "sha256:cb14de7f2e1de95176e6d3c1e350c7229910d465b0b547d03e748aaa63746168", size = 75630, upload-time = "2025-01-20T20:25:38.298Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/12/c28cdc2834bbd71e9300f97093766dfcd4b8f3c7b7059c1e8543c6f3b14c/libfaketime-2.1.0-py3-none-any.whl", hash = "sha256:df72634f79900e71160f4e3ba4cf8f1d7ba6167e7c9a4f28d67c08e0a4f03ba2", size = 92845, upload-time = "2024-05-17T14:23:40.461Z" },
+    { url = "https://files.pythonhosted.org/packages/4f/02/d2a6f41d1d44e4092a87c4bc3be37378b0192c84b5e2898568699ad9c190/libfaketime-3.0.0-py3-none-any.whl", hash = "sha256:aecfd92f1320f294269e56571af723ad7f6c27b0c6827d4561434e1a981ef84c", size = 92951, upload-time = "2025-01-20T20:25:36.219Z" },
 ]
 
 [[package]]
@@ -174,7 +174,7 @@ wheels = [
 
 [[package]]
 name = "pytest-libfaketime"
-version = "0.1.3"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "libfaketime" },
@@ -194,7 +194,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "libfaketime", specifier = ">=2.0.0,<3" },
+    { name = "libfaketime", specifier = ">=2.1.0" },
     { name = "pytest", specifier = ">=3.0.0" },
 ]
 
