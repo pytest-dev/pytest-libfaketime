@@ -1,3 +1,9 @@
+# Unreleased
+
+- The project is now packaged with uv instead of poetry.
+- Dropped support for Python 3.8 and 3.9.
+- Added support for Python 3.12, 3.13 and 3.14.
+
 # 0.1.3 - 2024-04-12
 
 - Updated the pypi package metadata. The repository is now hosted at github.com

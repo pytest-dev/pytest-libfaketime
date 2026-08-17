@@ -7,4 +7,13 @@
 
 # Tests
 
-```tox```
+Run the test suite against the current interpreter with
+[uv](https://docs.astral.sh/uv/):
+
+```uv run pytest```
+
+Run it against every supported Python version with
+[tox](https://tox.wiki), which needs the
+[tox-uv](https://github.com/tox-dev/tox-uv) plugin:
+
+```uv run tox```
