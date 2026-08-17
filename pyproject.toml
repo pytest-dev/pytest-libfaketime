@@ -39,7 +39,7 @@ build-backend = "uv_build"
 
 [dependency-groups]
 test = ["pytest-xdist>=3.5.0,<4"]
-dev = [{ include-group = "test" }, "tox>=4.22", "tox-uv>=1.13"]
+dev = [{ include-group = "test" }, "prek>=0.4", "tox>=4.22", "tox-uv>=1.13"]
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I", "UP", "D"]
@@ -63,5 +63,6 @@ commands = [["pytest", "-n", "auto", { replace = "posargs", extend = true }]]
 [tool.tox.env.style]
 runner = "uv-venv-runner"
 skip_install = true
-deps = ["pre-commit-uv"]
-commands = [["pre-commit", "run", "--all-files"]]
+dependency_groups = []
+deps = ["prek"]
+commands = [["prek", "run", "--all-files"]]
